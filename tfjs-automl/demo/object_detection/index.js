@@ -28,6 +28,11 @@ async function run() {
   // These are the default options.
   const options = {score: 0.5, iou: 0.5, topk: 20};
   const predictions = await model.detect(image, options);
+  console.log(predictions);
+  // Show the result in the web page.
+  const pre = document.createElement('pre');
+  pre.textContent = JSON.stringify(predictions, null, 2);
+  document.body.append(pre);
   drawBoxes(predictions);
 }
 
