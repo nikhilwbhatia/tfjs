@@ -1,6 +1,6 @@
 {
   "name": "tfjs",
-  "version:" "8.8.8".
+  "version:" "8.8.8",
   "devDependencies": {
     "@types/node": "^12.7.5",
     "argparse": "^1.0.10",
